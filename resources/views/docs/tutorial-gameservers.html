@@ -1,0 +1,401 @@
+<!-- Tutorial Game Servers -->
+<main id="tutorial-gameservers" class="relative overflow-hidden text-white min-h-screen">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 w-full h-full plus-bg pointer-events-none z-0"></div>
+
+    <!-- Content Container -->
+    <div class="relative z-10 pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <!-- Header -->
+            <div class="mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Cómo Configurar tu Servidor de Juegos</h1>
+                <p class="text-zinc-400">Guía general para configurar servidores de múltiples juegos</p>
+            </div>
+
+            <!-- Notice Banner -->
+            <div
+                class="mb-12 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-900 bg-blue-500/20 text-sm font-medium text-blue-200 backdrop-blur-sm">
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                </span>
+                Compatible con Rust, ARK, CS:GO, Valheim y más
+            </div>
+
+            <!-- Content -->
+            <div class="prose prose-invert max-w-none">
+                <div class="space-y-8 text-zinc-300 leading-relaxed">
+
+                    <!-- Introducción -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">Introducción</h2>
+                        <p>
+                            Esta guía te ayudará a configurar servidores para diversos juegos populares. Aunque cada
+                            juego tiene sus particularidades, los pasos básicos son similares.
+                        </p>
+                    </section>
+
+                    <!-- Paso 1 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Selecciona tu Juego</h3>
+                                <p class="text-zinc-300">
+                                    Elige el juego para el cual quieres crear un servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-3">
+                                    <i class="bi bi-controller text-orange-400 text-xl"></i>
+                                    <span class="text-white font-medium">Rust</span>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-3">
+                                    <i class="bi bi-controller text-green-400 text-xl"></i>
+                                    <span class="text-white font-medium">ARK: Survival Evolved</span>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-3">
+                                    <i class="bi bi-controller text-yellow-400 text-xl"></i>
+                                    <span class="text-white font-medium">Counter-Strike: Global Offensive</span>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-3">
+                                    <i class="bi bi-controller text-blue-400 text-xl"></i>
+                                    <span class="text-white font-medium">Valheim</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 2 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Accede al Panel de Control</h3>
+                                <p class="text-zinc-300">
+                                    Inicia sesión en el panel de gestión de tu servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="bi bi-link-45deg text-blue-400"></i>
+                                <span class="text-sm font-medium text-zinc-400">URL del Panel</span>
+                            </div>
+                            <code class="text-blue-400">https://panel.neohosting.com</code>
+                        </div>
+                    </section>
+
+                    <!-- Paso 3 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Configuración Básica</h3>
+                                <p class="text-zinc-300">
+                                    Personaliza los ajustes básicos de tu servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-4">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-3">Configuraciones comunes:</div>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-zinc-300">Nombre del servidor</span>
+                                        <span class="text-blue-400">Mi Servidor Épico</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-zinc-300">Contraseña</span>
+                                        <span class="text-blue-400">opcional</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-zinc-300">Jugadores máximos</span>
+                                        <span class="text-blue-400">50</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-zinc-300">Mapa</span>
+                                        <span class="text-blue-400">predeterminado</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Configuraciones por Juego -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-6">Configuraciones Específicas por Juego</h2>
+
+                        <!-- Rust -->
+                        <div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 mb-6">
+                            <div class="flex items-center gap-3 mb-4">
+                                <i class="bi bi-controller text-orange-400 text-2xl"></i>
+                                <h3 class="text-xl font-bold text-white">Rust</h3>
+                            </div>
+
+                            <div class="space-y-3">
+                                <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                    <div class="text-sm font-medium text-zinc-400 mb-2">Archivo de configuración:</div>
+                                    <code class="text-blue-400">server.cfg</code>
+                                </div>
+
+                                <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                    <div class="text-sm font-medium text-zinc-400 mb-3">Comandos importantes:</div>
+                                    <div class="space-y-1 font-mono text-sm">
+                                        <div><code class="text-green-400">server.hostname "Nombre del Servidor"</code>
+                                        </div>
+                                        <div><code class="text-green-400">server.maxplayers 100</code></div>
+                                        <div><code class="text-green-400">server.worldsize 4000</code></div>
+                                        <div><code class="text-green-400">server.seed 12345</code></div>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-lg bg-blue-900/20 border border-blue-800">
+                                    <div class="flex items-start gap-3">
+                                        <i class="bi bi-lightbulb text-yellow-400 text-xl mt-0.5"></i>
+                                        <div class="text-sm text-blue-200">
+                                            <strong>Tip:</strong> Usa Oxide/uMod para añadir plugins y mods a tu
+                                            servidor Rust.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ARK -->
+                        <div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 mb-6">
+                            <div class="flex items-center gap-3 mb-4">
+                                <i class="bi bi-controller text-green-400 text-2xl"></i>
+                                <h3 class="text-xl font-bold text-white">ARK: Survival Evolved</h3>
+                            </div>
+
+                            <div class="space-y-3">
+                                <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                    <div class="text-sm font-medium text-zinc-400 mb-2">Archivo de configuración:</div>
+                                    <code class="text-blue-400">GameUserSettings.ini</code>
+                                </div>
+
+                                <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                    <div class="text-sm font-medium text-zinc-400 mb-3">Configuraciones populares:</div>
+                                    <div class="space-y-1 font-mono text-sm">
+                                        <div><code class="text-green-400">TamingSpeedMultiplier=3.0</code></div>
+                                        <div><code class="text-green-400">HarvestAmountMultiplier=2.0</code></div>
+                                        <div><code class="text-green-400">XPMultiplier=2.0</code></div>
+                                        <div><code class="text-green-400">DifficultyOffset=1.0</code></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CS:GO -->
+                        <div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 mb-6">
+                            <div class="flex items-center gap-3 mb-4">
+                                <i class="bi bi-controller text-yellow-400 text-2xl"></i>
+                                <h3 class="text-xl font-bold text-white">Counter-Strike: Global Offensive</h3>
+                            </div>
+
+                            <div class="space-y-3">
+                                <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                    <div class="text-sm font-medium text-zinc-400 mb-2">Archivo de configuración:</div>
+                                    <code class="text-blue-400">server.cfg</code>
+                                </div>
+
+                                <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                    <div class="text-sm font-medium text-zinc-400 mb-3">Configuraciones esenciales:
+                                    </div>
+                                    <div class="space-y-1 font-mono text-sm">
+                                        <div><code class="text-green-400">hostname "Mi Servidor CS:GO"</code></div>
+                                        <div><code class="text-green-400">sv_password ""</code></div>
+                                        <div><code class="text-green-400">mp_autoteambalance 1</code></div>
+                                        <div><code class="text-green-400">mp_roundtime 2</code></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Valheim -->
+                        <div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                            <div class="flex items-center gap-3 mb-4">
+                                <i class="bi bi-controller text-blue-400 text-2xl"></i>
+                                <h3 class="text-xl font-bold text-white">Valheim</h3>
+                            </div>
+
+                            <div class="space-y-3">
+                                <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                    <div class="text-sm font-medium text-zinc-400 mb-3">Parámetros de inicio:</div>
+                                    <div class="space-y-1 font-mono text-sm">
+                                        <div><code class="text-green-400">-name "Nombre del Servidor"</code></div>
+                                        <div><code class="text-green-400">-port 2456</code></div>
+                                        <div><code class="text-green-400">-world "MiMundo"</code></div>
+                                        <div><code class="text-green-400">-password "contraseña"</code></div>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-lg bg-purple-900/20 border border-purple-800">
+                                    <div class="flex items-start gap-3">
+                                        <i class="bi bi-star text-purple-400 text-xl mt-0.5"></i>
+                                        <div class="text-sm text-purple-200">
+                                            <strong>Nota:</strong> Valheim requiere que los jugadores conozcan la
+                                            contraseña para unirse.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 4 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                4
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Inicia el Servidor</h3>
+                                <p class="text-zinc-300">
+                                    Arranca tu servidor desde el panel de control.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-green-900/20 border border-green-800">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="bi bi-play-circle text-green-400 text-2xl"></i>
+                                <span class="text-green-200 font-medium">Servidor iniciándose...</span>
+                            </div>
+                            <div class="text-sm text-green-300">
+                                El tiempo de inicio varía según el juego (30 segundos a 3 minutos).
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 5 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                5
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Conecta al Servidor</h3>
+                                <p class="text-zinc-300">
+                                    Únete a tu servidor desde el juego.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-4">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <i class="bi bi-hdd-network text-blue-400"></i>
+                                    <span class="text-sm font-medium text-zinc-400">Dirección del Servidor</span>
+                                </div>
+                                <code class="text-blue-400 text-lg">tu-servidor.neohosting.com:puerto</code>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-blue-900/20 border border-blue-800">
+                                <div class="flex items-start gap-3">
+                                    <i class="bi bi-info-circle text-blue-400 text-xl mt-0.5"></i>
+                                    <div class="text-sm text-blue-200">
+                                        La IP y puerto específicos se encuentran en el panel de control y en el email de
+                                        bienvenida.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Mods y Plugins -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-6">Instalación de Mods/Plugins</h2>
+
+                        <div class="space-y-3">
+                            <div class="text-sm text-zinc-300 mb-4">Pasos generales:</div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    1
+                                </div>
+                                <p class="text-zinc-300">Descarga el mod/plugin compatible con tu versión del juego</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    2
+                                </div>
+                                <p class="text-zinc-300">Sube los archivos a la carpeta correspondiente del servidor</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    3
+                                </div>
+                                <p class="text-zinc-300">Edita los archivos de configuración si es necesario</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    4
+                                </div>
+                                <p class="text-zinc-300">Reinicia el servidor</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-yellow-900/20 border border-yellow-800">
+                            <div class="flex items-start gap-3">
+                                <i class="bi bi-exclamation-triangle text-yellow-400 text-xl mt-0.5"></i>
+                                <div class="text-sm text-yellow-200">
+                                    <strong>Advertencia:</strong> Asegúrate de que los mods sean compatibles con la
+                                    versión actual del juego.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Soporte -->
+                    <section class="rounded-2xl border border-blue-800 bg-blue-900/20 p-6">
+                        <h2 class="text-2xl font-bold text-white mb-4">¿Necesitas Ayuda?</h2>
+                        <p class="text-zinc-300 mb-4">
+                            Si tienes problemas configurando tu servidor de juegos:
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-envelope text-blue-400"></i>
+                                <a href="mailto:soporte@neohosting.com"
+                                    class="text-blue-400 hover:text-blue-300 underline">soporte@neohosting.com</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-discord text-blue-400"></i>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 underline">Discord de
+                                    Neohosting</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

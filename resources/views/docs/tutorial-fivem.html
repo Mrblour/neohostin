@@ -1,0 +1,375 @@
+<!-- Tutorial FiveM Server -->
+<main id="tutorial-fivem" class="relative overflow-hidden text-white min-h-screen">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 w-full h-full plus-bg pointer-events-none z-0"></div>
+
+    <!-- Content Container -->
+    <div class="relative z-10 pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <!-- Header -->
+            <div class="mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Cómo Configurar tu Servidor FiveM</h1>
+                <p class="text-zinc-400">Guía completa para crear tu servidor de GTA V Roleplay</p>
+            </div>
+
+            <!-- Notice Banner -->
+            <div
+                class="mb-12 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-900 bg-blue-500/20 text-sm font-medium text-blue-200 backdrop-blur-sm">
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                </span>
+                Requiere licencia de FiveM (Patreon)
+            </div>
+
+            <!-- Content -->
+            <div class="prose prose-invert max-w-none">
+                <div class="space-y-8 text-zinc-300 leading-relaxed">
+
+                    <!-- Introducción -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">Introducción</h2>
+                        <p>
+                            FiveM es una plataforma de modificación para GTA V que permite crear servidores multijugador
+                            personalizados. Este tutorial te guiará en la configuración de tu servidor.
+                        </p>
+                    </section>
+
+                    <!-- Paso 1 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Obtén tu Licencia de FiveM</h3>
+                                <p class="text-zinc-300">
+                                    Necesitas una licencia de servidor de FiveM para ejecutar tu servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    1
+                                </div>
+                                <p class="text-zinc-300">Visita <a href="https://keymaster.fivem.net"
+                                        class="text-blue-400 hover:text-blue-300 underline">keymaster.fivem.net</a></p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    2
+                                </div>
+                                <p class="text-zinc-300">Inicia sesión con tu cuenta de Cfx.re</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    3
+                                </div>
+                                <p class="text-zinc-300">Genera una nueva clave de servidor</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 p-4 rounded-lg bg-yellow-900/20 border border-yellow-800">
+                            <div class="flex items-start gap-3">
+                                <i class="bi bi-exclamation-triangle text-yellow-400 text-xl mt-0.5"></i>
+                                <div class="text-sm text-yellow-200">
+                                    <strong>Importante:</strong> Guarda tu clave de servidor en un lugar seguro. La
+                                    necesitarás en el paso 3.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 2 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Accede al Panel de Control</h3>
+                                <p class="text-zinc-300">
+                                    Inicia sesión en el panel de control de Neohosting.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="bi bi-link-45deg text-blue-400"></i>
+                                <span class="text-sm font-medium text-zinc-400">URL del Panel</span>
+                            </div>
+                            <code class="text-blue-400">https://panel.neohosting.com</code>
+                        </div>
+                    </section>
+
+                    <!-- Paso 3 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Configura server.cfg</h3>
+                                <p class="text-zinc-300">
+                                    Edita el archivo de configuración principal de tu servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="text-sm font-medium text-zinc-400 mb-3">Configuración básica:</div>
+                            <div class="space-y-1 font-mono text-sm text-zinc-300">
+                                <div><span class="text-purple-400">sv_licenseKey</span> <span
+                                        class="text-green-400">"tu-clave-de-servidor"</span></div>
+                                <div><span class="text-purple-400">sv_hostname</span> <span class="text-green-400">"Mi
+                                        Servidor FiveM"</span></div>
+                                <div><span class="text-purple-400">sv_maxclients</span> <span
+                                        class="text-blue-400">32</span></div>
+                                <div><span class="text-purple-400">sv_endpointprivacy</span> <span
+                                        class="text-blue-400">true</span></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 4 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                4
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Instala un Framework</h3>
+                                <p class="text-zinc-300">
+                                    Elige e instala un framework para tu servidor roleplay.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center gap-3">
+                                        <i class="bi bi-box text-blue-400 text-xl"></i>
+                                        <span class="text-white font-medium">ESX Legacy</span>
+                                    </div>
+                                    <span class="text-xs text-zinc-500">Más popular</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Framework completo para roleplay con economía, trabajos
+                                    y más</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center gap-3">
+                                        <i class="bi bi-box text-purple-400 text-xl"></i>
+                                        <span class="text-white font-medium">QBCore</span>
+                                    </div>
+                                    <span class="text-xs text-zinc-500">Moderno</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Framework optimizado y actualizado regularmente</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <div class="flex items-center gap-3">
+                                        <i class="bi bi-box text-green-400 text-xl"></i>
+                                        <span class="text-white font-medium">vRP</span>
+                                    </div>
+                                    <span class="text-xs text-zinc-500">Clásico</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Framework veterano con amplia comunidad</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 5 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                5
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Instala Recursos/Scripts</h3>
+                                <p class="text-zinc-300">
+                                    Añade scripts y recursos para personalizar tu servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="text-sm text-zinc-300 mb-4">Pasos para instalar recursos:</div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    1
+                                </div>
+                                <p class="text-zinc-300">Descarga el recurso desde GitHub o foros de FiveM</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    2
+                                </div>
+                                <p class="text-zinc-300">Sube la carpeta a <code
+                                        class="px-2 py-1 rounded bg-black/50 text-blue-400">/resources/</code></p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    3
+                                </div>
+                                <p class="text-zinc-300">Añade <code
+                                        class="px-2 py-1 rounded bg-black/50 text-green-400">ensure nombre-recurso</code>
+                                    en server.cfg</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    4
+                                </div>
+                                <p class="text-zinc-300">Reinicia el servidor</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 6 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                6
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Configura la Base de Datos</h3>
+                                <p class="text-zinc-300">
+                                    La mayoría de frameworks requieren una base de datos MySQL.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="text-sm font-medium text-zinc-400 mb-3">Conexión MySQL en server.cfg:</div>
+                            <div class="space-y-1 font-mono text-sm text-zinc-300">
+                                <div><span class="text-purple-400">set mysql_connection_string</span> <span
+                                        class="text-green-400">"mysql://usuario:contraseña@localhost/nombre_bd"</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 p-4 rounded-lg bg-blue-900/20 border border-blue-800">
+                            <div class="flex items-start gap-3">
+                                <i class="bi bi-info-circle text-blue-400 text-xl mt-0.5"></i>
+                                <div class="text-sm text-blue-200">
+                                    Los datos de tu base de datos MySQL se encuentran en el panel de control de
+                                    Neohosting.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 7 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                7
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Inicia el Servidor</h3>
+                                <p class="text-zinc-300">
+                                    Arranca tu servidor y conéctate desde FiveM.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-green-900/20 border border-green-800">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="bi bi-play-circle text-green-400 text-2xl"></i>
+                                <span class="text-green-200 font-medium">Servidor iniciándose...</span>
+                            </div>
+                            <div class="text-sm text-green-300">
+                                El servidor puede tardar 1-2 minutos en cargar todos los recursos.
+                            </div>
+                        </div>
+
+                        <div class="mt-4 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="bi bi-hdd-network text-blue-400"></i>
+                                <span class="text-sm font-medium text-zinc-400">Conectarse desde FiveM</span>
+                            </div>
+                            <div class="text-sm text-zinc-300">
+                                Presiona <kbd class="px-2 py-1 rounded bg-zinc-800 text-white">F8</kbd> en FiveM y
+                                escribe:
+                            </div>
+                            <code class="text-green-400 block mt-2">connect tu-ip:30120</code>
+                        </div>
+                    </section>
+
+                    <!-- Recursos Recomendados -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-6">Recursos Recomendados</h2>
+
+                        <div class="space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-white font-medium">oxmysql</span>
+                                    <span class="text-xs text-zinc-500">Base de datos</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Conector MySQL optimizado para FiveM</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-white font-medium">pma-voice</span>
+                                    <span class="text-xs text-zinc-500">Voz</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Sistema de voz 3D para roleplay inmersivo</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-white font-medium">progressBars</span>
+                                    <span class="text-xs text-zinc-500">UI</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Barras de progreso para acciones del jugador</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Soporte -->
+                    <section class="rounded-2xl border border-blue-800 bg-blue-900/20 p-6">
+                        <h2 class="text-2xl font-bold text-white mb-4">¿Necesitas Ayuda?</h2>
+                        <p class="text-zinc-300 mb-4">
+                            Si tienes problemas configurando tu servidor FiveM:
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-envelope text-blue-400"></i>
+                                <a href="mailto:soporte@neohosting.com"
+                                    class="text-blue-400 hover:text-blue-300 underline">soporte@neohosting.com</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-discord text-blue-400"></i>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 underline">Discord de
+                                    Neohosting</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,314 @@
+<!-- Tutorial VPS Server -->
+<main id="tutorial-vps" class="relative overflow-hidden text-white min-h-screen">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 w-full h-full plus-bg pointer-events-none z-0"></div>
+
+    <!-- Content Container -->
+    <div class="relative z-10 pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <!-- Header -->
+            <div class="mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Cómo Configurar tu Servidor VPS</h1>
+                <p class="text-zinc-400">Guía completa para configurar y asegurar tu VPS desde cero</p>
+            </div>
+
+            <!-- Notice Banner -->
+            <div
+                class="mb-12 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-900 bg-blue-500/20 text-sm font-medium text-blue-200 backdrop-blur-sm">
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                </span>
+                Tutorial para Ubuntu 22.04 LTS y Debian 12
+            </div>
+
+            <!-- Content -->
+            <div class="prose prose-invert max-w-none">
+                <div class="space-y-8 text-zinc-300 leading-relaxed">
+
+                    <!-- Introducción -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">Introducción</h2>
+                        <p>
+                            Este tutorial te guiará a través de la configuración inicial de tu VPS, desde la primera
+                            conexión hasta tener un servidor seguro y listo para usar.
+                        </p>
+                    </section>
+
+                    <!-- Paso 1 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Conecta por SSH</h3>
+                                <p class="text-zinc-300">
+                                    Usa SSH para conectarte a tu VPS por primera vez.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="bi bi-terminal text-green-400"></i>
+                                <span class="text-sm font-medium text-zinc-400">Comando SSH</span>
+                            </div>
+                            <code class="text-green-400">ssh root@tu-ip-del-vps</code>
+                        </div>
+
+                        <div class="mt-4 p-4 rounded-lg bg-blue-900/20 border border-blue-800">
+                            <div class="flex items-start gap-3">
+                                <i class="bi bi-info-circle text-blue-400 text-xl mt-0.5"></i>
+                                <div class="text-sm text-blue-200">
+                                    <strong>Windows:</strong> Usa PuTTY o Windows Terminal<br>
+                                    <strong>Mac/Linux:</strong> Usa la terminal integrada
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 2 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Actualiza el Sistema</h3>
+                                <p class="text-zinc-300">
+                                    Actualiza todos los paquetes a sus últimas versiones.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-2">Para Ubuntu/Debian:</div>
+                                <code class="text-green-400 block">sudo apt update && sudo apt upgrade -y</code>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 3 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Crea un Nuevo Usuario</h3>
+                                <p class="text-zinc-300">
+                                    Por seguridad, crea un usuario no-root para uso diario.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-3">Comandos:</div>
+                                <div class="space-y-2 font-mono text-sm">
+                                    <div><code class="text-green-400">adduser tunombre</code></div>
+                                    <div><code class="text-green-400">usermod -aG sudo tunombre</code></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 p-4 rounded-lg bg-yellow-900/20 border border-yellow-800">
+                            <div class="flex items-start gap-3">
+                                <i class="bi bi-exclamation-triangle text-yellow-400 text-xl mt-0.5"></i>
+                                <div class="text-sm text-yellow-200">
+                                    <strong>Importante:</strong> Reemplaza "tunombre" con el nombre de usuario que
+                                    desees.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 4 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                4
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Configura el Firewall</h3>
+                                <p class="text-zinc-300">
+                                    Instala y configura UFW (Uncomplicated Firewall) para proteger tu servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-3">Comandos de configuración:</div>
+                                <div class="space-y-2 font-mono text-sm">
+                                    <div><code class="text-green-400">sudo apt install ufw</code></div>
+                                    <div><code class="text-green-400">sudo ufw allow 22/tcp</code> <span
+                                            class="text-zinc-500">// SSH</span></div>
+                                    <div><code class="text-green-400">sudo ufw allow 80/tcp</code> <span
+                                            class="text-zinc-500">// HTTP</span></div>
+                                    <div><code class="text-green-400">sudo ufw allow 443/tcp</code> <span
+                                            class="text-zinc-500">// HTTPS</span></div>
+                                    <div><code class="text-green-400">sudo ufw enable</code></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 5 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                5
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Instala Software Básico</h3>
+                                <p class="text-zinc-300">
+                                    Instala herramientas esenciales para gestionar tu servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-3">Paquetes recomendados:</div>
+                                <code
+                                    class="text-green-400 text-sm block">sudo apt install -y curl wget git htop nano vim</code>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 6 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                6
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Instala un Servidor Web (Opcional)</h3>
+                                <p class="text-zinc-300">
+                                    Si planeas alojar sitios web, instala Nginx o Apache.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-4">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <i class="bi bi-server text-green-400 text-xl"></i>
+                                    <span class="text-white font-medium">Opción 1: Nginx (Recomendado)</span>
+                                </div>
+                                <code class="text-green-400 text-sm">sudo apt install nginx</code>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <i class="bi bi-server text-orange-400 text-xl"></i>
+                                    <span class="text-white font-medium">Opción 2: Apache</span>
+                                </div>
+                                <code class="text-green-400 text-sm">sudo apt install apache2</code>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 7 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                7
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Configura SSH con Claves</h3>
+                                <p class="text-zinc-300">
+                                    Mejora la seguridad usando autenticación por clave SSH en lugar de contraseña.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-4">
+                            <div class="text-sm text-zinc-300 mb-4">En tu computadora local:</div>
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-2">Generar clave SSH:</div>
+                                <code class="text-green-400">ssh-keygen -t rsa -b 4096</code>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-2">Copiar clave al servidor:</div>
+                                <code class="text-green-400">ssh-copy-id tunombre@tu-ip-del-vps</code>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Comandos Útiles -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-6">Comandos Útiles para VPS</h2>
+
+                        <div class="space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">htop</code>
+                                    <span class="text-xs text-zinc-500">Monitor de recursos</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Ver uso de CPU, RAM y procesos en tiempo real</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">df -h</code>
+                                    <span class="text-xs text-zinc-500">Espacio en disco</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Ver espacio disponible en el disco</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">sudo systemctl status [servicio]</code>
+                                    <span class="text-xs text-zinc-500">Estado de servicio</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Ver el estado de un servicio (nginx, apache, etc.)</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">sudo reboot</code>
+                                    <span class="text-xs text-zinc-500">Reiniciar servidor</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Reinicia el VPS (úsalo con precaución)</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Soporte -->
+                    <section class="rounded-2xl border border-blue-800 bg-blue-900/20 p-6">
+                        <h2 class="text-2xl font-bold text-white mb-4">¿Necesitas Ayuda?</h2>
+                        <p class="text-zinc-300 mb-4">
+                            Si tienes problemas configurando tu VPS, contacta a nuestro equipo:
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-envelope text-blue-400"></i>
+                                <a href="mailto:soporte@neohosting.com"
+                                    class="text-blue-400 hover:text-blue-300 underline">soporte@neohosting.com</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-discord text-blue-400"></i>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 underline">Discord de
+                                    Neohosting</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,109 @@
+    body {
+        margin: 0;
+        background-color: #000000;
+        /* fondo oscuro base (near slate-950) */
+        color: #e5e7eb;
+    }
+
+    /* ========================================
+   HEADER SCROLL EFFECT
+   ======================================== */
+    header.scrolled {
+        background-color: rgba(0, 0, 0, 0.95) !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* ========================================
+   BARRA DE SCROLL PERSONALIZADA
+   ======================================== */
+
+    /* Para navegadores basados en Webkit (Chrome, Edge, Safari) */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #18181b;
+        /* zinc-900 */
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #2563eb, #1d4ed8);
+        /* blue-600 to blue-700 */
+        border-radius: 10px;
+        border: 2px solid #18181b;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #1d4ed8, #1e40af);
+        /* blue-700 to blue-800 */
+    }
+
+    /* Para Firefox */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #2563eb #18181b;
+        /* thumb track */
+    }
+
+    /* El espaciado superior del contenido ahora se maneja en responsive.css
+   sobre .app-shell main, así evitamos huecos extra. */
+
+    /* ========================================
+   ESTADO ACTIVO DEL MENÚ
+   ======================================== */
+
+    /* Enlaces activos en el header desktop */
+    header nav a[data-view].active {
+        color: #008cff !important;
+        /* cyan-500 */
+        position: relative;
+    }
+
+    /* Borde inferior para enlaces activos en desktop */
+    header nav>a[data-view].active::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #0658d4, #0855b2);
+        border-radius: 2px;
+    }
+
+    /* Enlaces activos en dropdowns */
+    header nav .group a[data-view].active {
+        background-color: rgba(6, 182, 212, 0.1) !important;
+        color: #0077ff !important;
+    }
+
+    /* Enlaces activos en menú móvil */
+    #mobile-menu a[data-view].active {
+        color: #0655d4 !important;
+        font-weight: 600;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+    /* Indicador visual para enlaces activos en móvil */
+    #mobile-menu a[data-view].active::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 70%;
+        background: linear-gradient(180deg, #005eff, #0835b2);
+        border-radius: 2px;
+    }
+
+    /* Botones Dashboard/Login activos */
+    header a[data-view="login"].active {
+        background-color: rgba(6, 85, 212, 0.15) !important;
+        border-color: #0655d4 !important;
+        color: #0655d4 !important;
+    }

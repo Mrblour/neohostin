@@ -1,0 +1,340 @@
+<!-- Tutorial Dedicated Server -->
+<main id="tutorial-dedicados" class="relative overflow-hidden text-white min-h-screen">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 w-full h-full plus-bg pointer-events-none z-0"></div>
+
+    <!-- Content Container -->
+    <div class="relative z-10 pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <!-- Header -->
+            <div class="mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Cómo Configurar tu Servidor Dedicado</h1>
+                <p class="text-zinc-400">Guía para configurar y optimizar tu servidor dedicado</p>
+            </div>
+
+            <!-- Notice Banner -->
+            <div
+                class="mb-12 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-900 bg-blue-500/20 text-sm font-medium text-blue-200 backdrop-blur-sm">
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                </span>
+                Hardware exclusivo para máximo rendimiento
+            </div>
+
+            <!-- Content -->
+            <div class="prose prose-invert max-w-none">
+                <div class="space-y-8 text-zinc-300 leading-relaxed">
+
+                    <!-- Introducción -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">Introducción</h2>
+                        <p>
+                            Un servidor dedicado te proporciona hardware exclusivo para tus proyectos. Esta guía te
+                            ayudará a configurarlo desde cero para obtener el máximo rendimiento.
+                        </p>
+                    </section>
+
+                    <!-- Paso 1 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Acceso Inicial</h3>
+                                <p class="text-zinc-300">
+                                    Conecta a tu servidor dedicado usando SSH o IPMI.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="bi bi-terminal text-green-400"></i>
+                                    <span class="text-sm font-medium text-zinc-400">Conexión SSH</span>
+                                </div>
+                                <code class="text-green-400">ssh root@tu-ip-dedicada</code>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-blue-900/20 border border-blue-800">
+                                <div class="flex items-start gap-3">
+                                    <i class="bi bi-info-circle text-blue-400 text-xl mt-0.5"></i>
+                                    <div class="text-sm text-blue-200">
+                                        <strong>IPMI:</strong> Acceso remoto al hardware incluso si el SO no responde.
+                                        Credenciales en el panel.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 2 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Instala el Sistema Operativo</h3>
+                                <p class="text-zinc-300">
+                                    Elige e instala el sistema operativo que mejor se adapte a tus necesidades.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-ubuntu text-orange-400 text-xl"></i>
+                                    <span class="text-white font-medium">Ubuntu Server 22.04 LTS</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Recomendado para principiantes, fácil de usar</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-debian text-red-400 text-xl"></i>
+                                    <span class="text-white font-medium">Debian 12</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Estable y confiable para producción</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="bi bi-windows text-blue-400 text-xl"></i>
+                                    <span class="text-white font-medium">Windows Server 2022</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Para aplicaciones Windows y .NET</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 3 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Configura RAID (Opcional)</h3>
+                                <p class="text-zinc-300">
+                                    Configura RAID para redundancia y mejor rendimiento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-white font-medium">RAID 0</span>
+                                    <span class="text-xs text-zinc-500">Máximo rendimiento</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Sin redundancia, máxima velocidad (no recomendado para
+                                    datos críticos)</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-white font-medium">RAID 1</span>
+                                    <span class="text-xs text-zinc-500">Espejo</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Duplica datos en dos discos, protección contra fallos
+                                </p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-white font-medium">RAID 10</span>
+                                    <span class="text-xs text-zinc-500">Recomendado</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Combina rendimiento y redundancia (requiere 4+ discos)
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 4 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                4
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Hardening de Seguridad</h3>
+                                <p class="text-zinc-300">
+                                    Asegura tu servidor contra amenazas comunes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-3">Configurar Firewall:</div>
+                                <div class="space-y-2 font-mono text-sm">
+                                    <div><code class="text-green-400">sudo apt install ufw</code></div>
+                                    <div><code class="text-green-400">sudo ufw default deny incoming</code></div>
+                                    <div><code class="text-green-400">sudo ufw default allow outgoing</code></div>
+                                    <div><code class="text-green-400">sudo ufw allow 22/tcp</code></div>
+                                    <div><code class="text-green-400">sudo ufw enable</code></div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-3">Deshabilitar root login:</div>
+                                <div class="space-y-2 font-mono text-sm">
+                                    <div><code class="text-green-400">sudo nano /etc/ssh/sshd_config</code></div>
+                                    <div class="text-zinc-500">Cambiar: <code
+                                            class="text-orange-400">PermitRootLogin no</code></div>
+                                    <div><code class="text-green-400">sudo systemctl restart sshd</code></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 5 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                5
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Optimiza el Rendimiento</h3>
+                                <p class="text-zinc-300">
+                                    Ajusta parámetros del sistema para máximo rendimiento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="text-sm font-medium text-zinc-400 mb-3">Optimizaciones de red:</div>
+                            <div class="space-y-2 font-mono text-sm">
+                                <div><code class="text-green-400">sudo nano /etc/sysctl.conf</code></div>
+                                <div class="mt-2 text-zinc-500">Añadir:</div>
+                                <div><code class="text-orange-400">net.core.rmem_max = 134217728</code></div>
+                                <div><code class="text-orange-400">net.core.wmem_max = 134217728</code></div>
+                                <div><code class="text-orange-400">net.ipv4.tcp_rmem = 4096 87380 67108864</code></div>
+                                <div class="mt-2"><code class="text-green-400">sudo sysctl -p</code></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 6 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                6
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Configura Backups Automáticos</h3>
+                                <p class="text-zinc-300">
+                                    Implementa una estrategia de respaldo para proteger tus datos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="text-sm font-medium text-zinc-400 mb-3">Backup con rsync:</div>
+                            <code
+                                class="text-green-400 text-sm block">rsync -avz /ruta/origen/ usuario@servidor-backup:/ruta/destino/</code>
+                        </div>
+
+                        <div class="mt-4 p-4 rounded-lg bg-purple-900/20 border border-purple-800">
+                            <div class="flex items-start gap-3">
+                                <i class="bi bi-star text-purple-400 text-xl mt-0.5"></i>
+                                <div class="text-sm text-purple-200">
+                                    <strong>Recomendación:</strong> Automatiza backups con cron jobs diarios o
+                                    semanales.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 7 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                7
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Monitoreo del Sistema</h3>
+                                <p class="text-zinc-300">
+                                    Configura herramientas de monitoreo para supervisar el rendimiento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-3">Instalar herramientas de monitoreo:
+                                </div>
+                                <code class="text-green-400 text-sm block">sudo apt install htop iotop nethogs</code>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Comandos Útiles -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-6">Comandos Útiles</h2>
+
+                        <div class="space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">lscpu</code>
+                                    <span class="text-xs text-zinc-500">Info CPU</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Ver información detallada del procesador</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">free -h</code>
+                                    <span class="text-xs text-zinc-500">Memoria RAM</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Ver uso de memoria RAM</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">iostat -x 1</code>
+                                    <span class="text-xs text-zinc-500">Disco I/O</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Monitorear rendimiento de discos</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Soporte -->
+                    <section class="rounded-2xl border border-blue-800 bg-blue-900/20 p-6">
+                        <h2 class="text-2xl font-bold text-white mb-4">¿Necesitas Ayuda?</h2>
+                        <p class="text-zinc-300 mb-4">
+                            Para soporte con servidores dedicados:
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-envelope text-blue-400"></i>
+                                <a href="mailto:soporte@neohosting.com"
+                                    class="text-blue-400 hover:text-blue-300 underline">soporte@neohosting.com</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-discord text-blue-400"></i>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 underline">Discord de
+                                    Neohosting</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

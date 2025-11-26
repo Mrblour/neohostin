@@ -1,0 +1,152 @@
+<!-- Crear Cuenta / Registro Page -->
+<main id="registro" class="relative overflow-hidden text-white min-h-screen">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 w-full h-full plus-bg pointer-events-none z-0"></div>
+
+    <!-- Background Glow -->
+    <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/20 blur-[120px] rounded-full pointer-events-none">
+    </div>
+
+    <!-- Centered Container with top padding for header -->
+    <div class="relative z-10 min-h-screen flex items-center justify-center px-6 py-12 pt-32">
+        <div class="w-full max-w-md">
+            <!-- Logo/Brand -->
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-white mb-2">Crear Cuenta</h1>
+                <p class="text-zinc-400">Únete a Neohosting</p>
+            </div>
+
+            <!-- Register Card -->
+            <div class="rounded-2xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm p-8 shadow-2xl">
+                <form class="space-y-6">
+                    <!-- Name Field -->
+                    <div>
+                        <label for="nombre" class="block text-sm font-medium text-white mb-2">
+                            <i class="bi bi-person mr-2"></i>Nombre Completo
+                        </label>
+                        <input type="text" id="nombre" name="nombre" required
+                            class="w-full px-4 py-3 rounded-lg bg-black/50 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition-all"
+                            placeholder="Juan Pérez">
+                    </div>
+
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-white mb-2">
+                            <i class="bi bi-envelope mr-2"></i>Email
+                        </label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 rounded-lg bg-black/50 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition-all"
+                            placeholder="tu@email.com">
+                    </div>
+
+                    <!-- Password Field -->
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-white mb-2">
+                            <i class="bi bi-lock mr-2"></i>Contraseña
+                        </label>
+                        <div class="relative">
+                            <input type="password" id="password" name="password" required
+                                class="w-full px-4 py-3 rounded-lg bg-black/50 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition-all"
+                                placeholder="••••••••">
+                            <button type="button" onclick="togglePassword()"
+                                class="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white transition-colors">
+                                <i class="bi bi-eye" id="toggleIcon"></i>
+                            </button>
+                        </div>
+                        <p class="text-xs text-zinc-500 mt-2">Mínimo 8 caracteres</p>
+                    </div>
+
+                    <!-- Confirm Password Field -->
+                    <div>
+                        <label for="confirm-password" class="block text-sm font-medium text-white mb-2">
+                            <i class="bi bi-lock-fill mr-2"></i>Confirmar Contraseña
+                        </label>
+                        <input type="password" id="confirm-password" name="confirm-password" required
+                            class="w-full px-4 py-3 rounded-lg bg-black/50 border border-zinc-800 text-white placeholder-zinc-500 focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 transition-all"
+                            placeholder="••••••••">
+                    </div>
+
+                    <!-- Terms Checkbox -->
+                    <div>
+                        <label class="flex items-start cursor-pointer">
+                            <input type="checkbox" required
+                                class="w-4 h-4 mt-1 rounded border-zinc-700 bg-black/50 text-blue-600 focus:ring-2 focus:ring-blue-600/20 focus:ring-offset-0">
+                            <span class="ml-2 text-sm text-zinc-300">
+                                Acepto los <a href="/terminos" class="text-blue-400 hover:text-blue-300">Términos de
+                                    Servicio</a> y la <a href="/privacidad"
+                                    class="text-blue-400 hover:text-blue-300">Política de Privacidad</a>
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Register Button -->
+                    <button type="submit"
+                        class="w-full px-8 py-4 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]">
+                        Crear Cuenta
+                    </button>
+
+                    <!-- Divider -->
+                    <div class="relative">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-zinc-800"></div>
+                        </div>
+                        <div class="relative flex justify-center text-sm">
+                            <span class="px-2 bg-zinc-900/50 text-zinc-400">O regístrate con</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Register Buttons -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <button type="button"
+                            class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-zinc-800 bg-black/50 text-white hover:bg-zinc-800 transition-colors">
+                            <i class="bi bi-google text-lg"></i>
+                            Google
+                        </button>
+                        <button type="button"
+                            class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-zinc-800 bg-black/50 text-white hover:bg-zinc-800 transition-colors">
+                            <i class="bi bi-discord text-lg"></i>
+                            Discord
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Login Link -->
+            <div class="text-center mt-6">
+                <p class="text-zinc-400">
+                    ¿Ya tienes una cuenta?
+                    <a href="/login" class="text-blue-400 hover:text-blue-300 font-medium transition-colors">
+                        Inicia sesión aquí
+                    </a>
+                </p>
+            </div>
+
+            <!-- Back to Home -->
+            <div class="text-center mt-4">
+                <a href="/"
+                    class="text-sm text-zinc-500 hover:text-zinc-300 transition-colors inline-flex items-center gap-2">
+                    <i class="bi bi-arrow-left"></i>
+                    Volver al inicio
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const toggleIcon = document.getElementById('toggleIcon');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.classList.remove('bi-eye');
+                toggleIcon.classList.add('bi-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.classList.remove('bi-eye-slash');
+                toggleIcon.classList.add('bi-eye');
+            }
+        }
+    </script>
+</main>

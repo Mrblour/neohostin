@@ -1,0 +1,378 @@
+<!-- Tutorial Minecraft Server -->
+<main id="tutorial-minecraft" class="relative overflow-hidden text-white min-h-screen">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 w-full h-full plus-bg pointer-events-none z-0"></div>
+
+    <!-- Content Container -->
+    <div class="relative z-10 pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <!-- Header -->
+            <div class="mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Cómo Configurar tu Servidor Minecraft</h1>
+                <p class="text-zinc-400">Guía paso a paso para poner en marcha tu servidor</p>
+            </div>
+
+            <!-- Notice Banner -->
+            <div
+                class="mb-12 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-900 bg-blue-500/20 text-sm font-medium text-blue-200 backdrop-blur-sm">
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                </span>
+                Tutorial actualizado para Minecraft 1.20+
+            </div>
+
+            <!-- Content -->
+            <div class="prose prose-invert max-w-none">
+                <div class="space-y-8 text-zinc-300 leading-relaxed">
+
+                    <!-- Introducción -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-4">Introducción</h2>
+                        <p>
+                            Una vez que hayas contratado tu servidor Minecraft con Neohosting, recibirás un correo con
+                            los datos de acceso. Este tutorial te guiará a través de los pasos necesarios para
+                            configurar y personalizar tu servidor.
+                        </p>
+                    </section>
+
+                    <!-- Paso 1 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Accede al Panel de Control</h3>
+                                <p class="text-zinc-300">
+                                    Inicia sesión en tu panel de control usando las credenciales que recibiste por
+                                    email.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="bi bi-link-45deg text-blue-400"></i>
+                                <span class="text-sm font-medium text-zinc-400">URL del Panel</span>
+                            </div>
+                            <code class="text-blue-400">https://panel.neohosting.com</code>
+                        </div>
+
+                        <div class="mt-4 p-4 rounded-lg bg-blue-900/20 border border-blue-800">
+                            <div class="flex items-start gap-3">
+                                <i class="bi bi-info-circle text-blue-400 text-xl mt-0.5"></i>
+                                <div>
+                                    <p class="text-sm text-blue-200">
+                                        <strong>Tip:</strong> Guarda tus credenciales en un lugar seguro. Puedes usar un
+                                        gestor de contraseñas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 2 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Selecciona la Versión de Minecraft</h3>
+                                <p class="text-zinc-300">
+                                    Desde el panel, elige la versión de Minecraft que deseas usar.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 mt-6">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <i class="bi bi-box text-green-400 text-xl"></i>
+                                        <span class="text-white font-medium">Vanilla</span>
+                                    </div>
+                                    <span class="text-xs text-zinc-400">Minecraft oficial sin modificaciones</span>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <i class="bi bi-bucket text-orange-400 text-xl"></i>
+                                        <span class="text-white font-medium">Spigot / Paper</span>
+                                    </div>
+                                    <span class="text-xs text-zinc-400">Para plugins y mejor rendimiento</span>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <i class="bi bi-hammer text-purple-400 text-xl"></i>
+                                        <span class="text-white font-medium">Forge / Fabric</span>
+                                    </div>
+                                    <span class="text-xs text-zinc-400">Para mods</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 3 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Configura las Propiedades del Servidor
+                                </h3>
+                                <p class="text-zinc-300">
+                                    Personaliza la configuración básica de tu servidor editando el archivo <code
+                                        class="px-2 py-1 rounded bg-black/50 text-blue-400">server.properties</code>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-4">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="text-sm font-medium text-zinc-400 mb-2">Configuraciones importantes:</div>
+                                <div class="space-y-2 font-mono text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-zinc-300">server-port</span>
+                                        <span class="text-blue-400">25565</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-zinc-300">max-players</span>
+                                        <span class="text-blue-400">20</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-zinc-300">difficulty</span>
+                                        <span class="text-blue-400">normal</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-zinc-300">gamemode</span>
+                                        <span class="text-blue-400">survival</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-zinc-300">pvp</span>
+                                        <span class="text-blue-400">true</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 4 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                4
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Inicia el Servidor</h3>
+                                <p class="text-zinc-300">
+                                    Una vez configurado, inicia tu servidor desde el panel de control.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-green-900/20 border border-green-800">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="bi bi-play-circle text-green-400 text-2xl"></i>
+                                <span class="text-green-200 font-medium">Servidor iniciándose...</span>
+                            </div>
+                            <div class="text-sm text-green-300">
+                                El servidor tardará aproximadamente 30-60 segundos en estar completamente operativo.
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 5 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                5
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Conéctate al Servidor</h3>
+                                <p class="text-zinc-300">
+                                    Abre Minecraft y conéctate usando la IP de tu servidor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-4">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <i class="bi bi-hdd-network text-blue-400"></i>
+                                    <span class="text-sm font-medium text-zinc-400">Dirección del Servidor</span>
+                                </div>
+                                <code class="text-blue-400 text-lg">tu-servidor.neohosting.com:25565</code>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-blue-900/20 border border-blue-800">
+                                <div class="flex items-start gap-3">
+                                    <i class="bi bi-lightbulb text-yellow-400 text-xl mt-0.5"></i>
+                                    <div class="text-sm text-blue-200">
+                                        <strong>Nota:</strong> La IP exacta de tu servidor se encuentra en el panel de
+                                        control y en el email de bienvenida.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Paso 6 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                6
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Hazte Operador (OP)</h3>
+                                <p class="text-zinc-300">
+                                    Para tener permisos de administrador en el servidor, necesitas hacerte OP.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-black/50 border border-zinc-800">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="bi bi-terminal text-green-400"></i>
+                                <span class="text-sm font-medium text-zinc-400">Comando en la Consola</span>
+                            </div>
+                            <code class="text-green-400">op TuNombreDeUsuario</code>
+                        </div>
+
+                        <div class="mt-4 text-sm text-zinc-400">
+                            Ejecuta este comando desde la consola del panel de control, reemplazando "TuNombreDeUsuario"
+                            con tu nombre de Minecraft.
+                        </div>
+                    </section>
+
+                    <!-- Paso 7 -->
+                    <section class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                                7
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Instala Plugins (Opcional)</h3>
+                                <p class="text-zinc-300">
+                                    Si usas Spigot/Paper, puedes instalar plugins para añadir funcionalidades.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 space-y-3">
+                            <div class="text-sm text-zinc-300 mb-4">Pasos para instalar plugins:</div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    1
+                                </div>
+                                <p class="text-zinc-300">Descarga el plugin (.jar) desde sitios como SpigotMC o Bukkit
+                                </p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    2
+                                </div>
+                                <p class="text-zinc-300">Sube el archivo a la carpeta <code
+                                        class="px-2 py-1 rounded bg-black/50 text-blue-400">/plugins/</code></p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-0.5">
+                                    3
+                                </div>
+                                <p class="text-zinc-300">Reinicia el servidor desde el panel</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 rounded-lg bg-purple-900/20 border border-purple-800">
+                            <div class="flex items-start gap-3">
+                                <i class="bi bi-star text-purple-400 text-xl mt-0.5"></i>
+                                <div class="text-sm text-purple-200">
+                                    <strong>Plugins recomendados:</strong> EssentialsX, WorldEdit, LuckPerms, Vault
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Comandos Útiles -->
+                    <section>
+                        <h2 class="text-2xl font-bold text-white mb-6">Comandos Útiles</h2>
+
+                        <div class="space-y-3">
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">/whitelist add [jugador]</code>
+                                    <span class="text-xs text-zinc-500">Añadir a whitelist</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Permite que un jugador específico se conecte al
+                                    servidor</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">/ban [jugador]</code>
+                                    <span class="text-xs text-zinc-500">Banear jugador</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Expulsa permanentemente a un jugador del servidor</p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">/gamemode [modo] [jugador]</code>
+                                    <span class="text-xs text-zinc-500">Cambiar modo de juego</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Cambia entre survival, creative, adventure o spectator
+                                </p>
+                            </div>
+
+                            <div class="p-4 rounded-lg bg-black/50 border border-zinc-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <code class="text-green-400">/tp [jugador] [destino]</code>
+                                    <span class="text-xs text-zinc-500">Teletransportar</span>
+                                </div>
+                                <p class="text-sm text-zinc-400">Teletransporta un jugador a otro jugador o coordenadas
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Soporte -->
+                    <section class="rounded-2xl border border-blue-800 bg-blue-900/20 p-6">
+                        <h2 class="text-2xl font-bold text-white mb-4">¿Necesitas Ayuda?</h2>
+                        <p class="text-zinc-300 mb-4">
+                            Si tienes problemas o preguntas, nuestro equipo de soporte está disponible 24/7:
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-envelope text-blue-400"></i>
+                                <a href="mailto:soporte@neohosting.com"
+                                    class="text-blue-400 hover:text-blue-300 underline">soporte@neohosting.com</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-discord text-blue-400"></i>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 underline">Discord de
+                                    Neohosting</a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

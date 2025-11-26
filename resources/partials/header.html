@@ -1,0 +1,160 @@
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800 bg-black/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <!-- <img src="assets/img/flutcom.svg" alt="Neohosting" class="w-8 h-8"> -->
+            <span class="font-bold text-xl tracking-tight text-white">Neohosting</span>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-6">
+            <a href="#home" data-view="home"
+                class="flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                <i class="bi bi-house-door"></i> Inicio
+            </a>
+
+            <!-- Games Dropdown -->
+            <div class="relative group">
+                <button
+                    class="flex items-center gap-2 text-sm font-medium text-zinc-400 group-hover:text-white transition-colors py-2">
+                    <i class="bi bi-controller"></i> Games
+                    <i class="bi bi-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                </button>
+                <div
+                    class="absolute top-full left-0 mt-0 w-56 bg-black border border-zinc-800 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left z-50 overflow-hidden">
+                    <div class="py-2 flex flex-col">
+                        <a href="#minecraft" data-view="minecraft"
+                            class="px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 flex items-center gap-3">
+                            <i class="bi bi-box text-zinc-400"></i> Minecraft
+                        </a>
+                        <a href="#fivem" data-view="fivem"
+                            class="px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 flex items-center gap-3">
+                            <i class="bi bi-lightning-charge text-zinc-400"></i> FiveM
+                        </a>
+                        <a href="#gta_sa" data-view="gta_sa"
+                            class="px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 flex items-center gap-3">
+                            <i class="bi bi-car-front text-zinc-400"></i> GTA San Andreas
+                        </a>
+                        <a href="#gameservers" data-view="gameservers"
+                            class="px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 flex items-center gap-3">
+                            <i class="bi bi-joystick text-zinc-400"></i> Game Servers
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servidores Dropdown -->
+            <div class="relative group">
+                <button
+                    class="flex items-center gap-2 text-sm font-medium text-zinc-400 group-hover:text-white transition-colors py-2">
+                    <i class="bi bi-server"></i> Servidores
+                    <i class="bi bi-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                </button>
+                <div
+                    class="absolute top-full left-0 mt-0 w-56 bg-black border border-zinc-800 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left z-50 overflow-hidden">
+                    <div class="py-2 flex flex-col">
+                        <a href="#vps" data-view="vps"
+                            class="px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 flex items-center gap-3">
+                            <i class="bi bi-hdd-network text-zinc-400"></i> VPS
+                        </a>
+                        <a href="#dedicados" data-view="dedicados"
+                            class="px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 flex items-center gap-3">
+                            <i class="bi bi-cpu text-zinc-400"></i> Dedicados
+                        </a>
+                        <a href="#web" data-view="web"
+                            class="px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 flex items-center gap-3">
+                            <i class="bi bi-globe text-zinc-400"></i> Web Hosting
+                        </a>
+                        <a href="#discord" data-view="discord"
+                            class="px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 flex items-center gap-3">
+                            <i class="bi bi-robot text-zinc-400"></i> Discord Bots
+                        </a>
+                        <a href="#databases" data-view="databases"
+                            class="px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/50 flex items-center gap-3">
+                            <i class="bi bi-database text-zinc-400"></i> Bases de Datos
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#soporte" data-view="soporte"
+                class="flex items-center gap-2 text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+                <i class="bi bi-life-preserver"></i> Soporte
+            </a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-4">
+            <a href="#login" data-view="login"
+                class="px-5 py-2 rounded-full border border-zinc-700 text-zinc-300 text-sm font-medium hover:bg-zinc-800 hover:text-white transition-all flex items-center gap-2">
+                <i class="bi bi-speedometer2"></i> Dashboard
+            </a>
+            <a href="https://discord.gg/neohosting" target="_blank"
+                class="px-5 py-2 rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors shadow-[0_0_15px_rgba(37,99,235,0.4)] flex items-center gap-2">
+                <i class="bi bi-discord"></i> Discord
+            </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-zinc-400 hover:text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-zinc-800 bg-black">
+        <div class="px-6 py-4 space-y-4 flex flex-col h-[calc(100vh-80px)] overflow-y-auto">
+            <a href="#home" data-view="home"
+                class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Inicio</a>
+
+            <div class="space-y-2">
+                <div class="flex items-center justify-between text-xs font-bold text-zinc-500 uppercase tracking-wider">
+                    Games <i class="bi bi-chevron-down"></i></div>
+                <a href="#minecraft" data-view="minecraft"
+                    class="block pl-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors">Minecraft</a>
+                <a href="#fivem" data-view="fivem"
+                    class="block pl-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors">FiveM</a>
+                <a href="#gta_sa" data-view="gta_sa"
+                    class="block pl-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors">GTA San
+                    Andreas</a>
+                <a href="#gameservers" data-view="gameservers"
+                    class="block pl-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors">Game
+                    Servers</a>
+            </div>
+
+            <div class="space-y-2">
+                <div class="flex items-center justify-between text-xs font-bold text-zinc-500 uppercase tracking-wider">
+                    Servidores <i class="bi bi-chevron-down"></i></div>
+                <a href="#vps" data-view="vps"
+                    class="block pl-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors">VPS</a>
+                <a href="#dedicados" data-view="dedicados"
+                    class="block pl-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors">Dedicados</a>
+                <a href="#web" data-view="web"
+                    class="block pl-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors">Web
+                    Hosting</a>
+                <a href="#discord" data-view="discord"
+                    class="block pl-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors">Discord
+                    Bots</a>
+                <a href="#databases" data-view="databases"
+                    class="block pl-4 text-sm font-medium text-zinc-400 hover:text-white transition-colors">Bases de
+                    Datos</a>
+            </div>
+
+            <a href="#soporte" data-view="soporte"
+                class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Soporte</a>
+
+            <hr class="border-zinc-800 my-2">
+
+            <div class="flex flex-col gap-3 pt-2 pb-6">
+                <a href="#login" data-view="login"
+                    class="text-center px-4 py-2 rounded-lg border border-zinc-700 text-zinc-300 hover:bg-zinc-800 flex items-center justify-center gap-2">
+                    <i class="bi bi-speedometer2"></i> Dashboard
+                </a>
+                <a href="https://discord.gg/neohosting" target="_blank"
+                    class="text-center px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 flex items-center justify-center gap-2">
+                    <i class="bi bi-discord"></i> Discord
+                </a>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,314 @@
+<!-- ==========================
+     HEADERS - EJEMPLOS
+========================== -->
+
+<!-- Header Ejemplo 1: Original completo (logo + menú + botones) -->
+<header style="background-color: white; display: flex; justify-content: space-between; align-items: center;">
+    <div class="logo text-blod">
+        <img src="assets/img/icon.png" alt="Flutcom Logo">
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span id="sitio">Flutcom</span>
+            <div class="header-version">
+                <button type="button" class="version-toggle">
+                    <span id="app-version-pill" class="version-pill">v1.0.0</span>
+                    <span class="version-caret">▾</span>
+                </button>
+                <div class="version-menu">
+                    <button type="button" class="version-item version-current">v1.0.0</button>
+                    <button type="button" class="version-item">v0.9.0</button>
+                    <button type="button" class="version-item">v0.8.0</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="menu-check">
+    <label for="menu-check" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="#" data-view="home">Home</a></li>
+                <li><a href="#" data-view="about">Acerca</a></li>
+                <li><a href="#" data-view="services">Servicios</a></li>
+                <li><a href="#" data-view="pricing">Precios</a></li>
+                <li><a href="#" data-view="contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="boton">
+        <a href="#dash">Dashboard</a>
+        <a href="#" data-view="login">Login</a>
+    </div>
+</header>
+
+<!-- Header Ejemplo 2: Sin botones Dashboard/Login -->
+<header style="background-color: white; display: flex; justify-content: space-between; align-items: center;">
+    <div class="logo text-blod">
+        <img src="assets/img/icon.png" alt="Flutcom Logo">
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span id="sitio">Flutcom</span>
+            <div class="header-version">
+                <span id="app-version-pill" class="version-pill">v1.0.0</span>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="menu-check">
+    <label for="menu-check" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="#" data-view="home">Home</a></li>
+                <li><a href="#" data-view="about">Acerca</a></li>
+                <li><a href="#" data-view="services">Servicios</a></li>
+                <li><a href="#" data-view="pricing">Precios</a></li>
+                <li><a href="#" data-view="contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Header Ejemplo 3: Centro y sin toggle (solo logo + menú) -->
+<header style="background-color: white; padding: 12px 20px; border-bottom: 1px solid #e5e7eb;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <img src="assets/img/icon.png" alt="Flutcom Logo" style="width: 40px; height: 40px;">
+            <span id="sitio" style="font-weight: 700; font-size: 20px;">Flutcom</span>
+        </div>
+        <nav>
+            <ul style="display: flex; list-style: none; gap: 18px; font-size: 14px;">
+                <li><a href="#" data-view="home">Home</a></li>
+                <li><a href="#" data-view="about">Acerca</a></li>
+                <li><a href="#" data-view="services">Servicios</a></li>
+                <li><a href="#" data-view="pricing">Precios</a></li>
+                <li><a href="#" data-view="contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Header Ejemplo 4: Barra superior oscura -->
+<header style="background-color: #0f172a; color: white; padding: 10px 20px;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/img/icon.png" alt="Flutcom Logo" style="width: 36px; height: 36px;">
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+                <span id="sitio" style="font-weight: 600;">Flutcom</span>
+                <span id="app-version-pill" class="version-pill" style="font-size: 12px; background: #1e293b; padding: 2px 8px; border-radius: 999px;">v1.0.0</span>
+            </div>
+        </div>
+        <nav>
+            <ul style="display: flex; list-style: none; gap: 14px; font-size: 14px;">
+                <li><a href="#" data-view="home" style="color: inherit;">Home</a></li>
+                <li><a href="#" data-view="about" style="color: inherit;">Acerca</a></li>
+                <li><a href="#" data-view="services" style="color: inherit;">Servicios</a></li>
+                <li><a href="#" data-view="pricing" style="color: inherit;">Precios</a></li>
+                <li><a href="#" data-view="contact" style="color: inherit;">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Header Ejemplo 5: Header minimal con logo centrado -->
+<header style="background-color: white; padding: 16px 20px; border-bottom: 1px solid #e5e7eb;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <img src="assets/img/icon.png" alt="Flutcom Logo" style="width: 40px; height: 40px;">
+            <span id="sitio" style="font-weight: 700; font-size: 20px;">Flutcom</span>
+        </div>
+        <nav>
+            <ul style="display: flex; list-style: none; gap: 18px; font-size: 14px;">
+                <li><a href="#" data-view="home">Home</a></li>
+                <li><a href="#" data-view="about">Acerca</a></li>
+                <li><a href="#" data-view="services">Servicios</a></li>
+                <li><a href="#" data-view="pricing">Precios</a></li>
+                <li><a href="#" data-view="contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ==========================
+     FOOTERS - EJEMPLOS
+========================== -->
+
+<!-- Footer Ejemplo 1: Simple centrado -->
+<footer style="padding: 20px; text-align: center; font-size: 14px; color: #64748b; background-color: #f9fafb;">
+    <p> Flutcom. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Footer Ejemplo 2: Con links de navegación -->
+<footer style="padding: 24px 20px; background-color: #0f172a; color: #cbd5f5;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <span> Flutcom</span>
+        <nav>
+            <ul style="list-style: none; display: flex; gap: 16px; font-size: 14px;">
+                <li><a href="#" data-view="terms" style="color: inherit;">Términos</a></li>
+                <li><a href="#" data-view="privacy" style="color: inherit;">Privacidad</a></li>
+                <li><a href="#" data-view="refund" style="color: inherit;">Reembolsos</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<!-- Footer Ejemplo 3: Tres columnas -->
+<footer style="padding: 40px 20px; background-color: #020617; color: #e5e7eb;">
+    <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+        <div>
+            <h4 style="margin-bottom: 8px;">Flutcom</h4>
+            <p style="font-size: 14px;">Framework frontend ligero para proyectos web rápidos y mantenibles.</p>
+        </div>
+        <div>
+            <h4 style="margin-bottom: 8px;">Recursos</h4>
+            <ul style="list-style: none; font-size: 14px; display: flex; flex-direction: column; gap: 4px;">
+                <li><a href="#" data-view="docs" style="color: inherit;">Documentación</a></li>
+                <li><a href="#" data-view="tewlcss" style="color: inherit;">Tailwind Demo</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 style="margin-bottom: 8px;">Contacto</h4>
+            <p style="font-size: 14px;">Email: soporte@flutcom.dev</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer Ejemplo 4: Barra mínima con redes -->
+<footer style="padding: 12px 20px; background-color: #ffffff; border-top: 1px solid #e5e7eb; font-size: 13px;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
+        <span> Flutcom</span>
+        <div style="display: flex; gap: 12px;">
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="Discord">Discord</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer Ejemplo 5: Fondo degradado -->
+<footer style="padding: 30px 20px; background: linear-gradient(135deg, #0f172a, #020617); color: #e5e7eb;">
+    <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+        <h4 style="margin-bottom: 10px;">Construido con Flutcom</h4>
+        <p style="font-size: 14px; margin-bottom: 10px;">Plantilla base optimizada para SPAs estáticas, Tailwind y buenas prácticas.</p>
+        <p style="font-size: 12px; opacity: 0.8;"> Flutcom. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- ==========================
+     FOOTERS - VARIANTES A/B/C
+     Basados en footer.html
+========================== -->
+
+<!-- Footer Variante A: Igual estructura que footer.html pero sin newsletter -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="assets/img/icon.png" alt="Flutcom Logo">
+                <span>Flutcom</span>
+            </div>
+            <p class="footer-description">
+                Empowering organizations with reliable funding solutions for success.
+            </p>
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter" title="Twitter"></a>
+                <a href="#" aria-label="LinkedIn" title="LinkedIn"></a>
+                <a href="#" aria-label="GitHub" title="GitHub"></a>
+                <a href="#" aria-label="Instagram" title="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>SITE MAP</h3>
+            <ul>
+                <li><a href="#" data-view="home">Home</a></li>
+                <li><a href="#" data-view="about">FAQs</a></li>
+                <li><a href="#" data-view="contact">Contact us</a></li>
+                <li><a href="#" data-view="affiliate">Affiliate</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>RESOURCES</h3>
+            <ul>
+                <li><a href="#" data-view="services">Services</a></li>
+                <li><a href="#" data-view="terms">Terms of use</a></li>
+                <li><a href="#" data-view="privacy">Privacy Policy</a></li>
+                <li><a href="#" data-view="refund">Refund Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p> 2025 Bautic Studios - Desarrollado por <a href="#home" data-view="home">Flutcom</a></p>
+    </div>
+</footer>
+
+<!-- Footer Variante B: Newsletter centrado y menos columnas -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="assets/img/icon.png" alt="Flutcom Logo">
+                <span>Flutcom</span>
+            </div>
+            <p class="footer-description">
+                Suscríbete para recibir novedades sobre lanzamientos y mejoras del framework.
+            </p>
+        </div>
+
+        <div class="footer-column footer-newsletter">
+            <h3>NEWSLETTER</h3>
+            <p>Recibe tips de optimización y buenas prácticas en tu correo.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+                <input type="email" placeholder="Tu email" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p> 2025 Flutcom. Construido para proyectos modernos.</p>
+    </div>
+</footer>
+
+<!-- Footer Variante C: Más enfocado en enlaces legales y docs -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>FLUTCOM</h3>
+            <ul>
+                <li><a href="#" data-view="home">Home</a></li>
+                <li><a href="#" data-view="docs">Docs</a></li>
+                <li><a href="#" data-view="tewlcss">Tailwind Demo</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>LEGAL</h3>
+            <ul>
+                <li><a href="#" data-view="terms">Terms of use</a></li>
+                <li><a href="#" data-view="privacy">Privacy Policy</a></li>
+                <li><a href="#" data-view="refund">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>CONTACTO</h3>
+            <ul>
+                <li><a href="#" data-view="contact">Soporte</a></li>
+                <li><a href="#" data-view="traders">Traders Dashboard</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p> 2025 Flutcom. Algunos derechos reservados.</p>
+    </div>
+</footer>
